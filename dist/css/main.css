@@ -192,6 +192,8 @@ main {
       opacity: 0.5;
       border-color: #d1ad0d;
       transition: all 0.5s ease-out; }
+  .projects a {
+    background: #fff; }
 
 .boxes {
   display: flex;

@@ -284,7 +284,9 @@ main {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+    .projects .item {
+      text-align: left; } }
 
 @media screen and (max-width: 500px) {
   main h1.lg-heading {
@@ -296,5 +298,7 @@ main {
     text-align: left; }
   .projects {
     grid-template-columns: 1fr; }
+    .projects .item {
+      text-align: left; }
   .boxes div {
     padding: 0.5rem 1.5rem; } }

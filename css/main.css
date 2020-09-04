@@ -126,7 +126,7 @@ h3 {
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
-    margin-bottom: 2rem;
+    margin-bottom: 1.3rem;
     padding: 0.2rem 1rem;
     background: rgba(73, 73, 73, 0.5); }
 
@@ -169,7 +169,8 @@ main {
     border: #d1ad0d 3px solid; }
   .about-info .bio {
     grid-area: bio;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    text-align: left; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
@@ -180,6 +181,8 @@ main {
     background: #515151;
     padding: 0.5rem;
     border-bottom: #d1ad0d 5px solid; }
+    .about-info .job h3 {
+      color: #d1ad0d; }
 
 .projects {
   display: grid;
@@ -244,7 +247,12 @@ main {
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .about-info {
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-columns: 1fr; }
+  .projects {
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -279,7 +287,14 @@ main {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
-  main#home h1 {
+  main h1.lg-heading {
+    font-size: 4rem;
     margin-top: 10vh; }
+  main h2.sm-heading {
+    font-size: 1.4rem; }
+  .job {
+    text-align: left; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .boxes div {
+    padding: 0.5rem 1.5rem; } }

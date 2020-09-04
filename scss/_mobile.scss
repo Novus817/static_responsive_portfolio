@@ -80,6 +80,10 @@
 
   .projects {
     grid-template-columns: repeat(2, 1fr);
+
+    .item {
+      text-align: left;
+    }
   }
 }
 
@@ -102,6 +106,10 @@
 
   .projects {
     grid-template-columns: 1fr;
+
+    .item {
+      text-align: left;
+    }
   }
 
   .boxes div {
